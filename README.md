@@ -1,6 +1,6 @@
 # levenshtein
 
-levenshtein: grep-like tool for fuzzy string matching
+A grep-like command line utlity for fuzzy string matching
 
 ```shell
 $ levenshtein -h
