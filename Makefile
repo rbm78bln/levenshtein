@@ -10,6 +10,7 @@ test: $(TARGET)
 
 clean:
 	$(RM) -v $(OBJS) $(BUILDDIR)/$(TARGET).unstripped $(TARGET)
+	rmdir $(BUILDDIR)
 
 $(BUILDDIR):
 	mkdir -pv $(BUILDDIR)
