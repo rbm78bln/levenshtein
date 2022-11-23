@@ -1,0 +1,14 @@
+#!/bin/sh -e
+
+[ "$1" -gt "0" ] || (echo "usage: $0 n" && exit 1)
+
+git commit -a -m "Initial commit"
+git push
+
+git reset --soft HEAD~$1
+git commit -m "Initial commit"
+git push -f
+
+# alt:
+#git rebase -i HEAD~$1
+#git push -f
